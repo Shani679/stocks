@@ -1,0 +1,75 @@
+body{
+	background-color: #f1f1f1;
+	color: black;
+}
+.stocks-container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: center;
+}
+.stocks-container > .stock-box{
+	padding: 30px 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.amcharts-stock-div {
+  width: 357px;
+  height: 200px;
+}
+.details{
+	padding: 5px 30px 0 0;
+}
+.stock-name{
+	color: #218af0;
+	font-weight: bold;
+}
+.stock-value{
+	font-weight: bold;
+	font-weight: bold;
+}
+.positive{
+	color: #1fa15d;
+	font-weight: bold;
+}
+.negative{
+	color: #fd666d;
+	font-weight: bold;
+}
+h1{
+	color: rgb(104, 104, 132);
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+button{
+	border: none;
+	border-radius: 3px;
+	background-color: rgb(104, 104, 132);
+	color: #fff;
+	padding: 12px;
+}
+button:hover{
+	-webkit-box-shadow: 0 3px 9px -4px rgba(0,0,0,.75);
+    -moz-box-shadow: 0 3px 9px -4px rgba(0,0,0,.75);
+    box-shadow: 0 3px 9px -4px rgba(0,0,0,.75);
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid rgb(104, 104, 132);
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
